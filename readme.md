@@ -40,8 +40,6 @@ Set up environment variables:
 ## Create a .env file in the project root directory and add your LinkedIn login credentials:
 
 ```bash
-env
-Copy code
 LINKEDIN_USERNAME=your_email@example.com
 LINKEDIN_PASSWORD=your_password
 ```
@@ -53,8 +51,17 @@ LINKEDIN_PASSWORD=your_password
 
 - This project is licensed under the MIT License.
 
-- Acknowledgments
-- Selenium
-- Pandas
-- webdriver_manager
-- Python-dotenv
+Acknowledgments
+Selenium
+Pandas
+webdriver_manager
+Python-dotenv
+
+
+
+## Connect with Shobhit Parashar
+
+Follow me to collaborate on new and interesting projects that are both useful and innovative. Let's create something great together!
+
+Connect with me on [LinkedIn](https://www.linkedin.com/in/shobhit-parashar/).
+
