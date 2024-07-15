@@ -51,8 +51,25 @@ LINKEDIN_PASSWORD=your_password
 
 - This project is licensed under the MIT License.
 
+<<<<<<< HEAD
+Acknowledgments
+Selenium
+Pandas
+webdriver_manager
+Python-dotenv
+
+
+
+## Connect with Shobhit Parashar
+
+Follow me to collaborate on new and interesting projects that are both useful and innovative. Let's create something great together!
+
+Connect with me on [LinkedIn](https://www.linkedin.com/in/shobhit-parashar/).
+
+=======
 - Acknowledgments
 - Selenium
 - Pandas
 - webdriver_manager
 - Python-dotenv
+>>>>>>> fcf011c815b0977e0ad7c6d28104bf1924e67d48
