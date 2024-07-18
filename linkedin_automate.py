@@ -34,18 +34,18 @@ def login_to_linkedin():
     password_field.send_keys(Keys.RETURN)
     time.sleep(2)
 
-import validators
-def send_connection_request(profile_url):
-    # Validate the profile URL
-    if profile_url and validators.url(profile_url):
-        try:
-            driver.get(profile_url)
-            time.sleep(5)
+# # import validators
+# def send_connection_request(profile_url):
+#     # Validate the profile URL
+#     if profile_url and validators.url(profile_url):
+#         try:
+#             driver.get(profile_url)
+#             time.sleep(5)
 
-        except Exception as e:
-            print(f"An error occurred while trying to navigate to {profile_url}: {e}")
-    else:
-        print(f"Invalid URL: {profile_url}")
+#         except Exception as e:
+#             print(f"An error occurred while trying to navigate to {profile_url}: {e}")
+#     else:
+#         print(f"Invalid URL: {profile_url}")
 
 
 
@@ -119,8 +119,8 @@ def find_and_connect(role):
     print("Searching for {role}...")
     time.sleep(2)  # Wait for search results to load
     
-    # Iterate through search results and send connection requests
-    # This is a simplified example; you'll need to adapt it based on the page structure
+#     # Iterate through search results and send connection requests
+#     # This is a simplified example; you'll need to adapt it based on the page structure
 
 
 
