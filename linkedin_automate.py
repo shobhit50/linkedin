@@ -68,7 +68,7 @@ def navigate_to_company_employees_section(company_page_url):
         search_box = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "search-global-typeahead__input")))
         time.sleep(5)
 
-        keys = ['team lead', 'hr',]
+        keys = ['team lead', 'hr',] # List of keywords to search for you can add more
         for key in keys:
             search_box.clear()
             search_box.send_keys(key)
@@ -100,27 +100,26 @@ def navigate_to_company_employees_section(company_page_url):
     except Exception as e:
         print(f"An error occurred while trying to navigate to {company_page_url}: {e}")
 
-def find_and_connect(role):
-    print(f"Searching for...")
-    try:
-    # Wait up to 10 seconds for the search box to be present
-        search_box = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, 'xpath_to_search_box'))
-        )
-        # Now you can interact with the search box, e.g., sending keys
-        search_box.send_keys(role)
-        search_box.send_keys(Keys.RETURN)
-    except TimeoutException:
-        print("Timed out waiting for the search box to be present.")
 
 
-    print(f"Searching for {role}...")
-    print(search_box)
-    print("Searching for {role}...")
-    time.sleep(2)  # Wait for search results to load
+# def find_and_connect(role):
+#     print(f"Searching for...")
+#     try:
+#     # Wait up to 10 seconds for the search box to be present
+#         search_box = WebDriverWait(driver, 10).until(
+#             EC.presence_of_element_located((By.XPATH, 'xpath_to_search_box'))
+#         )
+#         search_box.send_keys(role)
+#         search_box.send_keys(Keys.RETURN)
+#     except TimeoutException:
+#         print("Timed out waiting for the search box to be present.")
+
+
+#     print(f"Searching for {role}...")
+#     print(search_box)
+#     print("Searching for {role}...")
+#     time.sleep(2)  # Wait for search results to load
     
-#     # Iterate through search results and send connection requests
-#     # This is a simplified example; you'll need to adapt it based on the page structure
 
 
 
