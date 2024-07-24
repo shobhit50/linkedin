@@ -40,8 +40,6 @@ Set up environment variables:
 ## Create a .env file in the project root directory and add your LinkedIn login credentials:
 
 ```bash
-env
-Copy code
 LINKEDIN_USERNAME=your_email@example.com
 LINKEDIN_PASSWORD=your_password
 ```
