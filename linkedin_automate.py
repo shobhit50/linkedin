@@ -118,8 +118,8 @@ def navigate_to_company_employees_section(company_page_url):
 #     time.sleep(2)  # Wait for search results to load
 
 
-# Read the Excel sheet
-df = pd.read_excel('Job_list.xlsx')
+# Read the Excel sheet provided with the list of LinkedIn profiles
+df = pd.read_excel('Job_list.xlsx') 
 
 def main():
     login_to_linkedin()
@@ -131,4 +131,6 @@ def main():
 
 
 main()
+
+
 
