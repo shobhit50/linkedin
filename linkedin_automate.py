@@ -14,8 +14,6 @@ import os
 from dotenv import load_dotenv
 load_dotenv() 
 
-# source venv/Scripts/activate
-
 # Set up the Selenium WebDriver
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
@@ -119,8 +117,6 @@ def navigate_to_company_employees_section(company_page_url):
 #     print("Searching for {role}...")
 #     time.sleep(2)  # Wait for search results to load
 
-
-# git commit --date="2024-07-21 15:24:18" -m "Linkedin Automate"
 
 # Read the Excel sheet
 df = pd.read_excel('Job_list.xlsx')
