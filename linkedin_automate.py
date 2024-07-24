@@ -100,31 +100,27 @@ def navigate_to_company_employees_section(company_page_url):
     except Exception as e:
         print(f"An error occurred while trying to navigate to {company_page_url}: {e}")
 
-def find_and_connect(role):
-    print(f"Searching for...")
-    try:
-    # Wait up to 10 seconds for the search box to be present
-        search_box = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, 'xpath_to_search_box'))
-        )
-        # Now you can interact with the search box, e.g., sending keys
-        search_box.send_keys(role)
-        search_box.send_keys(Keys.RETURN)
-    except TimeoutException:
-        print("Timed out waiting for the search box to be present.")
+# def find_and_connect(role):
+#     print(f"Searching for...")
+#     try:
+#     # Wait up to 10 seconds for the search box to be present
+#         search_box = WebDriverWait(driver, 10).until(
+#             EC.presence_of_element_located((By.XPATH, 'xpath_to_search_box'))
+#         )
+#         # Now you can interact with the search box, e.g., sending keys
+#         search_box.send_keys(role)
+#         search_box.send_keys(Keys.RETURN)
+#     except TimeoutException:
+#         print("Timed out waiting for the search box to be present.")
 
 
-    print(f"Searching for {role}...")
-    print(search_box)
-    print("Searching for {role}...")
-    time.sleep(2)  # Wait for search results to load
-    
-#     # Iterate through search results and send connection requests
-#     # This is a simplified example; you'll need to adapt it based on the page structure
+#     print(f"Searching for {role}...")
+#     print(search_box)
+#     print("Searching for {role}...")
+#     time.sleep(2)  # Wait for search results to load
 
 
-
-
+# git commit --date="2024-07-21 15:24:18" -m "Linkedin Automate"
 
 # Read the Excel sheet
 df = pd.read_excel('Job_list.xlsx')
