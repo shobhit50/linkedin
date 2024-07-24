@@ -51,7 +51,7 @@ LINKEDIN_PASSWORD=your_password
 
 - This project is licensed under the MIT License.
 
-Acknowledgments
+## Acknowledgments
 Selenium
 Pandas
 webdriver_manager
