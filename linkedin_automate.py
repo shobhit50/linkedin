@@ -14,8 +14,18 @@ import os
 from dotenv import load_dotenv
 load_dotenv() 
 
+import shutil
+from pathlib import Path
+
+# Path to the ChromeDriver executable
+chromedriver_path = 'linkedin\chromedriver-win32\chromedriver.exe'
+
 # Set up the Selenium WebDriver
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+try:
+    driver = webdriver.Chrome(service=Service(chromedriver_path))
+except Exception as e:
+    print(f"Error initializing WebDriver: {e}")
+    driver = None
 
 # # LinkedIn login credentials
 linkedin_username = load_dotenv('LINKEDIN_USERNAME')
@@ -123,9 +133,9 @@ df = pd.read_excel('Job_list.xlsx')
 
 def main():
     login_to_linkedin()
-    for profile_url in df['LinkedIn']:
-        if pd.notna(profile_url) and isinstance(profile_url, str):
-            navigate_to_company_employees_section(profile_url)
+    # for profile_url in df['LinkedIn']:
+    #     if pd.notna(profile_url) and isinstance(profile_url, str):
+    #         navigate_to_company_employees_section(profile_url)
             
             
 
